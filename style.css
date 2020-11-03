@@ -1,0 +1,70 @@
+#website {
+    margin: 0 auto;
+    width: 500px;
+}
+
+/* Background color */
+body {
+    background: rgb(8,106,143);
+    background: linear-gradient(90deg, rgba(8,106,143,0.14639359161633403) 0%, rgba(0,0,0,0.06796221906731448) 100%);
+}
+
+/* Initial Fade-in */
+body {
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+/* Body Font */
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+    color: #333;
+    background-color: #fff;
+}
+
+.label {
+    background-color: #5bc0de;
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1.name {
+    font-size: 32px;
+    margin-bottom: auto;
+}
+
+div.top {
+    text-align: center;
+}
+
+h3.subname {
+    margin-top: auto;
+    margin-bottom: 50px;
+}
+
+span.label {
+    margin-right: 7px;
+}
+
+li a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
