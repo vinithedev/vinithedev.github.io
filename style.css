@@ -28,7 +28,6 @@ body {
 }
 
 .label {
-    background-color: #5bc0de;
     display: inline;
     padding: .2em .6em .3em;
     font-size: 75%;
@@ -39,6 +38,16 @@ body {
     white-space: nowrap;
     vertical-align: baseline;
     border-radius: .25em;
+}
+
+.l-bas {
+    background-color: #5bc0de;
+}
+.l-int {
+    background-color: #4ba9c5;
+}
+.l-adv {
+    background-color: #3f8499;
 }
 
 ul {
@@ -67,4 +76,98 @@ li a {
     position: relative;
     display: block;
     padding: 10px 15px;
+    background-color: rgba(0, 0, 99, 0.05);
+    border-radius: 11px;
+    margin: 8px 0px;
+    width: 50%;
+}
+
+ul.linkedin-container {
+    padding-left: 0px;
+}
+
+/* SlideShow */
+.horizontal-slider, iframe {
+    width: 500px;
+    height: 820px;
+    background: none;
+    overflow: hidden;
+    position: relative;
+}
+
+.h-items {
+    /*width: 400%;*/
+    font-size: 0;
+    padding: 0;
+}
+
+.h-items > li {
+    display: inline-block;
+    /*width: 25%;*/
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-style: ridge;
+}
+
+.next {
+    right: 0px;
+}
+
+/* Blink Animation */
+.prev, .next {
+    animation-duration: 2200ms;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+ }
+@keyframes blink {
+    from {
+       opacity: 1;
+    }
+    to {
+       opacity: 0.4;
+    }
+}
+
+/* ScrollBar */
+::-webkit-scrollbar {
+    width: 9px;
+}
+::-webkit-scrollbar-track {
+    background: white; 
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(60, 87, 122);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(55, 79, 110);
+}
+
+/* Resizes */
+@media only screen and (max-width: 500px) {
+    
+    body {
+        margin: 8px 0px;
+    }
+    .subj-title {
+        margin-left: 11px;
+    }
+    #website {
+        width: 100%;
+        font-size: 3vw;
+    }
+    .linkedin-container, iframe, li {
+        width: 100%;
+    }
+    iframe, .horizontal-slider {
+        height: 120vw;
+    }
+
 }
